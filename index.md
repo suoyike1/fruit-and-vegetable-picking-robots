@@ -3,7 +3,7 @@ layout: project_page
 permalink: /
 
 title: 
-    基于大语言模型的机械臂操作
+   基于具身智能赋能的机械臂抓取在创新研究生教育模式改革中的应用
 authors:
     王东
 affiliations:
@@ -15,344 +15,330 @@ affiliations:
 
 
 <div class="content has-text-justified">
-	为深入贯彻国家教育数字化战略行动的实施，加速推进人工智能在研究生教育领域的创新应用，积极探索并推广适应新时代需求的研究生教育教学新形态、新模式，我们致力于推动人工智能技术与学术实践的深度融合。
 
-我们的目标是培养既具备人工智能理论和实践能力，又精通行业应用场景的复合型创新人才，为社会和产业注入新动能。基于此，我们特别聚焦于当前利用大语言模型（LLM）实现机械臂操作的前沿方法，进行了系统性调研，并努力搜集和整理相关的开源程序资源。这一举措旨在为学生提供亲身体验人工智能技术带来的前所未有的变革机会，让他们在实际操作中更好地理解人工智能的潜力和价值。
 
-未来，我们将继续推动相关领域的深度研究，打造更加开放、前沿、创新的学习环境，帮助研究生在人工智能驱动的新时代中实现全面发展，为国家科技创新和经济高质量发展贡献力量。
+<html>
+<head>
+<meta charset="utf-8" />
+<style>
+    .p2{text-indent: 2em;}
+</style>
+</head>
+<body>
+    <p class="p2">为深入贯彻国家教育数字化战略行动的实施，加速推进人工智能在研究生教育领域的创新应用，积极探索并推广适应新时代需求的研究生教育教学新形态、新模式，我们致力于推动具身智能（Embodied Intelligence）技术与现代农业实践的深度融合。
+
+我们的目标是培养既具备人工智能理论和实践能力，又精通现代农业智能化场景的复合型创新人才，为社会和农业产业注入新动能。基于此，我们特别聚焦于利用具身智能与机械臂操作相结合的前沿方法，深入研究如何高效实现番茄和甜椒等经济作物的智能采摘。这一研究过程中，我们不仅进行了系统性调研，还积极整合先进的传感器技术、实时控制算法和开源机械臂操作程序，探索实现从感知到决策再到执行的全链条智能操作。
+
+通过这一实践，我们为学生提供了亲身体验具身智能技术在现代农业中的实际应用场景，让他们在操作中深刻理解人工智能如何感知、交互与执行，从而提高农业生产效率、减少人力投入，并解决实际生产中的复杂问题。这种教育模式使学生在学习过程中更紧密地与行业需求对接，深化了对智能技术创新潜力和实际价值的认识。
+
+未来，我们将继续推动具身智能在农业等关键领域的深度研究，构建更加开放、前沿、实践导向的学习环境，帮助研究生在智能化驱动的新时代中实现全面发展，为国家科技创新、农业现代化和经济高质量发展贡献力量。
+    </p>
+</body>
+</html>
+
         </div>
 
-## 文献一
-<!-- Using HTML to center the abstract -->
-<div class="columns is-centered has-text-centered">
-    <div class="column is-four-fifths">
-        <h2>    </h2>
-        <h2>VLMPC: Vision-Language Model Predictive Control for Robotic Manipulation</h2>
-        <h2 style="font-size: 16px;">作者：Wentao Zhao*, Jiaming Chen*, Ziyu Meng, Donghui Mao, Ran Song†, Wei Zhang</h2>
-        <h2 style="font-size: 16px;">单位：山东大学</h2>
-        <h2 style="font-size: 16px;">Robotics: Science and Systems (RSS), 2024.</h2>
-        <div class="content has-text-justified">
-摘要: 尽管模型预测控制（MPC）可以有效地预测系统的未来状态，因此被广泛应用于机器人操纵任务中，但它不具有环境感知能力，导致在一些复杂的场景中失败。为了解决这个问题，我们引入了视觉语言模型预测控制（VLMPC），这是一种机器人操纵框架，利用视觉语言模型（VLM）的强大感知能力，并将其与MPC集成。具体来说，我们提出了一种条件动作采样模块，该模块将目标图像或语言指令作为输入，并利用VLM对一组候选动作序列进行采样。然后，设计了一个轻量级的动作条件视频预测模型，以生成一组基于候选动作序列的未来帧。VLMPC通过分层成本函数在VLM的帮助下产生最优动作序列，该函数规定了当前观测值和目标图像之间的像素级和知识级一致性。我们证明VLMPC在公共基准测试中优于最先进的方法。更重要的是，我们的方法在机器人操纵的各种现实任务中表现出色。代码可在以下网址获得https://github.com/PPjmchen/VLMPC.
-        </div>
-    </div>
-</div>
+
+
+# 一、具身智能在现代农业中的应用
+## 1.番茄采摘机器人
+<html>
+<head>
+<meta charset="utf-8" />
+<style>
+    .p2{text-indent: 2em;}
+</style>
+</head>
+<body>
+    <p class="p2">所开发采摘机器人由全向移动机器人、6自由度机械臂、末端执行器、深度相机、计算机和收获篮组成，如图1-1所示。机器人底部的移动平台是一个四轮全向机器人，机器人的每个轮子都可以360度旋转。机器人顶部安装的UR5机械臂具有六个自由度，有效载荷为5 kg，工作空间半径为850 mm。机械臂控制箱安装在采摘机器人前部。机械臂的末端执行器是可更换末端抓手，在抓取不同作物如番茄和甜椒时使用不同的末端抓手。在收获机器人的侧面安装了一个摄像头，用于番茄和甜椒的识别和定位。收获筐安装在采摘机器人后方以方便采摘机器人完成番茄抓取后放置番茄。
+    </p>
+</body>
+</html>
+
+<img src="/static/image/1-1.png" alt="Turing Machine" width="700" style="display: block; margin: auto;">    
+<p align="center">图1-1 番茄采摘机器人样机</p>
+
+
+
+<html>
+<head>
+<meta charset="utf-8" />
+<style>
+    .p2{text-indent: 2em;}
+</style>
+</head>
+<body>
+    <p class="p2">番茄采摘机器人软件系统设计。为了实现番茄识别与定位、采摘机械臂控制和末端抓手控制，我们分别使用USB 3.0、I/O接口和以太网将深度相机、末端抓手和机械臂与机器人计算机进行通信。在计算机的Ubuntu18.04系统中安装ROS（Robot Operating System），并在ROS中进行各传感器和控制器的信息传递，所开发采摘机器人架构如图1-2所示。使用深度学习识别算法进行番茄识别，番茄的三维坐标为基于番茄在图像中的位置来确定。采摘机器人将番茄的三维位置坐标从相机坐标系转换到采摘机械臂坐标下并使用RRT算法规划路径，使用IK快速逆解求解器来获得机械臂的关节角度。最后采摘机械臂执行获得的结果将夹爪运动到达番茄的位置。最后采摘抓手抓住番茄，并通过旋转达到番茄果梗分离的效果。
+    </p>
+</body>
+</html>
+
+<div style="text-align: center;">
+<img alt="" src="/static/image/1-2.png" style="margin: 0 auto;" /></div>
+
+<p align="center">图1-2 番茄采摘机器人软件框架</p>
+
+<html>
+<head>
+<meta charset="utf-8" />
+<style>
+    .p2{text-indent: 2em;}
+</style>
+</head>
+<body>
+    <p class="p2">所设计采摘机器人末端夹爪由抓取叶片、旋转架、转子、步进电机等部分组成，如图1-3所示。抓取叶片分为两部分，上半部分为抓取部分，设计为曲率10m-1的弯曲叶片，以贴合果实圆形的外表形状，表面附着软体材料避免对果实造成破坏。抓取叶片下半部分为固定安装部分，其上部通孔为安装孔，表面凸起部分为限位架。旋转架为圆形支架，为整个末端夹爪核心零件，其上开有三个开口，用于安装抓取叶片；在开口旁设置的挡板为推力板，用于转子推动抓取叶片旋转；旋转架中央开有通孔用于穿过电机轴，其旁边开设圆形凹槽用于安装推力轴承；末端夹爪转子包含三个长方体旋转轴，在旋转轴末端的轴向和径向上分别设置为斜面用于拨动抓取叶片。步进电机安装架为长方体壳体，其上部开有通孔用于穿过电机轴，通孔旁的圆形凹槽用于安装阻尼轴承；顶部开设四个通孔用于步进电机的安装固定，侧面四个通孔用于与底部安装法兰连接。
+    </p>
+</body>
+</html>
+
+<div style="text-align: center;">
+<img alt="" src="/static/image/1-3.png" style="margin: 0 auto;" /> </div>
+<p align="center">图1-3 番茄采摘夹爪</p>
+
+<p class="p2">夹爪叶片通过螺栓安装到旋转架上，并在抓取叶片安装孔和旋转架间安装扭簧，使其在没有受力的自然状态下处于张开的状态。步进电机通过步进电机安装架上的通孔与自身螺纹孔进行安装固定，在步进电机架的顶部安装阻尼轴承后通过旋转架的中央通孔穿过旋转架后分别在电机轴上安装电机滚子轴承和推力轴承。在推力轴承上方通过电机轴安装转子，并最后通过止推环进行固定，达到轴向定位的效果。安装完成后，电机安装架与旋转架完成连接，由于在旋转架与转子之间安装有推力轴承，旋转架与电机主轴间安装有滚动轴承，保证了电机在旋转时只要转子不与旋转架上的推力板接触则旋转架保持静止。旋转架与电机支架间安装的阻尼轴承确保了转子在推动抓取叶片时不会带动旋转架旋转。
+</p>
+
+<p class="p2">采摘末端夹爪共有三个状态：开启、闭合和旋转。当转子叶片处于不与抓取叶片接触的位置时，抓取叶片在扭簧的作用下保持打开的状态，且其表面的限位架与末端夹爪顶盖接触，保证抓取叶片与抓取顶盖间留有足够空隙，确保转子后续能够与抓取叶片接触并推动抓取叶片。当启动步进电机令其正向低速旋转80度并保持不动，则末端夹爪处于闭合状态，此过程中当转子旋转至60度时转子与抓取叶片接触，转子通过继续旋转，转子叶片末端的斜面将抓取叶片向下方施加压力，最终在旋转叶片旋转至80度时将抓取叶片的下部推至竖立状态，使末端夹爪转换为闭合状态，此过程中会对转子叶片产生少量的切向推力，但是旋转架与电机间安装架间安装的阻尼轴承会产生相应的阻力使旋转架保持静止。当转子旋转80度时，转子叶片与旋转架上的推力板接触，此时若继续使步进电机进行旋转，则末端夹爪进入第三个状态，即果实旋转分离状态。转子通过推动推力板使整个旋转架进行旋转，在其上安装的抓取叶片也随之旋转，果实在抓取叶片的抓取下进行旋转，以达到果梗分离的目的。在果实释放时，使步进电机逆转80度，此时转子与抓取叶片脱离接触，抓取叶片在扭簧的作用下打开，使末端夹爪达到开启的状态，如图1-4所示。
+</p>
+
+<div style="text-align: center;">
+<img alt="" src="/static/image/1-4.png" style="margin: 0 auto;" /></div>
+<p align="center">图1-4 番茄采摘夹爪</p>
+
+<p class="p2">最后在植物工厂中对番茄采摘夹爪进行了采摘实验以验证其有效性。使用所设计番茄采摘夹爪从多个方向抓取西红柿，并抓取不同大小的西红柿。番茄分别以垂直于地面的姿态和倾斜于地面的姿态被抓住。由于球形果实的生长特性，番茄采摘夹爪可以以垂直或倾斜地面等各种抓取姿态抓取番茄，如图1-5所示。
+</p>
+
+<div style="text-align: center;">
+<img alt="" src="/static/image/1-5.png" style="margin: 0 auto;" /></div>
+<p align="center">图1-5 番茄采摘夹爪</p>
+
+## 2.甜椒采摘机器人
+
+<html>
+<head>
+<meta charset="utf-8" />
+<style>
+    .p2{text-indent: 2em;}
+</style>
+</head>
+<body>
+    <p class="p2">甜椒采摘机器人的整体结构如图1-6所示。采摘机器人系统主要由一个6自由度机械臂UR5、一个机械臂控制器、两个视觉系统Realsense D435i相机、一个全向移动机器人和一个末端执行器组成。采摘机器人采用UR5六自由度工业机械臂完成采摘任务。眼在手外相机用于移动机器人的导航，而眼在手上的相机用于识别甜椒和甜椒果梗。高性能D435i相机用于获取采摘环境中的图像，这些图像被传输到视觉计算机Ubuntu18.04。采摘机器人的整个系统是在机器人操作系统（ROS）中实现的。
+    </p>
+</body>
+</html>
+
+<div style="text-align: center;">
+<img alt="" src="/static/image/1-6.png" style="margin: 0 auto;" /></div>
+<p align="center">图1-6 甜椒采摘机器人整体结构图</p>
+
+
+<p class="p2">甜椒采摘过程如图1-7所示，一共包括以下几个过程。1）水果的初始识别：基于YOLOv5s识别算法，获得甜椒的位置。根据识别出果实位置的深度值确定采摘顺序，按照由小到大的顺序进行采摘。2）将识别的水果的3D坐标投影到虚拟的预采摘平面上，以获得投影点。通过计算水果在预采摘平面上的投影点到预定义点的距离，距离投影点最短的点就是机械臂要到达的预采摘点。从机械臂到预采摘平面上所有点的轨迹是离线规划的。预先定义了机械臂到达这些点的轨迹以及末端的位置和姿态。3）到达预摘平面上的预摘点后，利用YOLOv5s识别算法对甜椒进行识别。考虑到在当前视角下出现多个甜椒的可能性，我们选择深度值最小的水果识别框，并根据水果识别框获得甜椒果梗的ROI。采用轻量级实例分割网络YOLACT对甜椒果梗进行ROI识别。4）对识别的甜椒果梗像素进行二值化处理，使用骨架细化提取获得采摘点。分析甜椒果梗的姿态，并为机械臂选择合适的采摘姿态。最后，控制机械臂和末端执行器以选定的采摘姿态到达采摘点，以完成采摘。
+</p>
+
+<div style="text-align: center;">
+<img alt="" src="/static/image/1-7.png" style="margin: 0 auto;" /></div>
+<p align="center">图1-7 甜椒采摘机器人采摘过程</p>
+
+
+<p class="p2">农业采摘场景是一个非结构化的环境，果实大小和果梗的长短不一，因此末端执行器需要小巧灵活，并且具有一定的适应性和智能性。现有末端执行器结构庞大不灵活，易与植株发生碰撞，厚度较厚对于果梗较短的果蔬无法完成采摘。另外，当发生采摘失败时如夹持器末端发生滑动，视觉识别算法产生的误差以及机械臂采摘果实时果实产生的振荡导致末端执行器夹空等。
+为了克服上述现有采摘机器人末端执行器弊端，提高采摘效率，针对甜椒的采收，设计了一种甜椒采摘装置设计与控制方法。为了实现甜椒的无损收获，设计了锯式末端执行器。所设计的末端执行器采用夹持果梗和切割果梗的方法。它在采摘过程中不接触甜椒果实，因此可以最大限度地延长作物的储存寿命和使用价值。末端执行器主要由四部分组成：伺服电动双指并联夹持器模块、剪切模块、触觉传感模块和步进电机丝杠滑台。伺服电动双指并联夹持器模块负责夹持甜椒果梗。剪切模块安装在步进电机丝杠滑台的顶部。它通过继电器控制启动和停止，并通过步进电机向前和向后移动。阵列触觉传感器模块安装在夹具的末端，以感测果梗的位置。阵列触觉传感器模块主要有两个功能：感知果梗的精确位置和判断是否发生采摘故障。收割机器人在非结构化环境中工作，有时无法抓取。当这种情况发生时，机械臂无法感知，还会执行将水果放在采摘篮中的步骤，消耗能量。为了解决这个问题，使用了三个触觉传感器来确定是否发生采摘故障。当触发三个触觉传感器时，认为抓取失败，摆动的刀具不再切割，机械臂将返回初始位置进行重新识别和采摘。回收装置圆形采集桶与三个阻挡柱进行连接，圆形采集桶中心位置在夹持甜椒果梗的正下方前面3-5cm处，如图1-8所示。与现有技术相比，本设计甜椒采摘装置设计采用夹持甜椒果梗和剪切果梗的方式进行采摘，夹持模块采用舵机进行驱动结构小巧，模拟电推剪式切割果梗，夹持末端和剪切锯片在厚度上为1.2cm左右，由于末端很薄，在采摘过程中更灵活，能够适应不同长短果梗进行采摘，提高采摘成功率。另外夹持模块末端装有触觉传感器能精确感知果梗位置进行精确切割，传统末端执行器发生采摘失败时，夹爪闭合，采摘机械臂感知不到采摘失败，误认为抓取到了果实，会执行把果实放回到采摘蓝子的动作然后回到初始位置，与此相比当发生采摘失败时，夹爪闭合三个触觉传感器会被全部触发，通过触觉传感器的信号，判断此次抓取失败，不会再执行放置果实到篮子的动作，节省能量提高采摘机械臂的效率。末端装置上设计了果实回收装置，能够显著提高单果的采摘时间，提高采摘效率。结构设计上能够防止回收装置与植株发生碰撞，避免损坏植株。
+</p>
+
+<div style="text-align: center;">
+<img alt="" src="/static/image/1-10.png" style="margin: 0 auto;" /></div>
+<p align="center">图1-9 改进的末端执行器模型和实物图</p>
 
 
 
 
----
-![Turing Machine](/static/image/1vlm.jpeg)
-
-*图 1: VLMPC接收目标图像或语言指令作为输入。它首先提示VLM生成条件采样分布，从中推导出动作序列。然后，这些动作序列被馈送到轻量级的动作条件视频预测模型中，以预测一组未来的帧。VLMPC的评估是通过由两个子成本组成的分层成本函数进行的：像素距离成本和基于未来帧进行视频评估的VLM辅助成本。VLMPC最终选择最佳动作序列，其中机器人选择要执行的第一个动作，随后的动作被输入动作采样模块，以进一步辅助条件动作采样。[文献链接](https://arxiv.org/abs/2407.09829)&[项目链接](https://github.com/PPjmchen/VLMPC)*
 
 
+# 二、采摘机器人控制方法研究
+## 1. 番茄采摘机器人控制方法研究
+
+<html>
+<head>
+<meta charset="utf-8" />
+<style>
+    .p2{text-indent: 2em;}
+</style>
+</head>
+<body>
+    <p class="p2">使用番茄的位置和机械臂的当前末端夹爪位置预先计算适当的初始抓取姿态。使用非线性估计器方法对机械臂的相机和末端夹爪进行校准，校准后可以获得深度相机与机械臂末端夹爪间的旋转矩阵，并将其旋转关系添加到ROS中，建立深度相机和机械臂的TF树。通过ROS将旋转矩阵T从相机坐标系camera直接读取到机械臂底部坐标系base。通过旋转矩阵 执行TF转换，以将从相机获得的番茄三维坐标 和机械臂末端夹爪的工具坐标系的原点 转换为基础坐标系base。坐标转换关系如图2-1所示。
+    </p>
+    <p class="p2">番茄采摘机器人配备了UR5e的6自由度机械臂和一个用于抓取番茄的末端夹爪。在机械臂的路径规划过程中，如果不添加约束，机械臂的规划路径可以从任何方向接近番茄。然而，末端抓手的存在决定了采摘机器人只能从抓手打开的方向上靠近并抓取番茄。否则，末端抓手从其他方向接近番茄将导致末端抓手与番茄碰撞，从而无法成功抓住番茄。为了克服这一问题，提出了一种基于添加插值点的方法来约束机械臂的路径，使机械臂的规划路径能够沿着抓手开口的方向接近番茄，避免夹爪与番茄之间的碰撞。
+    </p>
+    <p class="p2">在植物工厂中进行了番茄采摘机器人收获番茄的完整过程如图2-2所示。在抓取姿态下方添加一个插值点，以确保抓取器首先到达番茄底部，最后将开口朝向番茄抓取，以避免抓取器在抓取番茄时从侧面靠近。采摘机器人在识别并定位番茄后，通过可达抓取算法求得番茄的可达抓取姿态。机械臂的夹爪首先到达目标番茄的底部，然后用夹爪开口朝着番茄的方向抓住番茄，抓住番茄后旋转3圈，实现番茄茎的分离，最后将番茄放入收获篮中，完成一个收获周期。采摘机器人完成一个抓取任务周期大约需要20秒。
+    </p>
+</body>
+</html>
+
+<div style="text-align: center;">
+<img alt="" src="/static/image/3-1.png" style="margin: 0 auto;" /></div>
+<p align="center">图2-1 番茄采摘机器人坐标转换关系</p>
+
+<div style="text-align: center;">
+<img alt="" src="/static/image/3-2.png" style="margin: 0 auto;" /></div>
+<p align="center">图2-2 完整番茄采摘过程</p>
 
 
+## 2. 甜椒采摘机器人机械臂运动规划控制研究
 
-## 文献二
-<!-- Using HTML to center the abstract -->
-<div class="columns is-centered has-text-centered">
-    <div class="column is-four-fifths">
-        <h2>    </h2>
-        <h2>Do As I Can, Not As I Say: Grounding Language in Robotic Affordances</h2>
-        <h2 style="font-size: 16px;">作者：1 Michael Ahn∗
-, Anthony Brohan∗
-, Noah Brown∗
-, Yevgen Chebotar∗
-, Omar Cortes∗
-, Byron David∗
-,
-Chelsea Finn∗
-, Chuyuan Fu†
-, Keerthana Gopalakrishnan∗
-, Karol Hausman∗
-, Alex Herzog†
-,
-Daniel Ho†
-, Jasmine Hsu∗
-, Julian Ibarz∗
-, Brian Ichter∗
-, Alex Irpan∗
-, Eric Jang∗
-,
-Rosario Jauregui Ruano∗
-, Kyle Jeffrey∗
-, Sally Jesmonth∗
-, Nikhil J Joshi∗
-, Ryan Julian∗
-,
-Dmitry Kalashnikov∗
-, Yuheng Kuang∗
-, Kuang-Huei Lee∗
-, Sergey Levine∗
-, Yao Lu∗
-, Linda Luu∗
-,
-Carolina Parada∗
-, Peter Pastor†
-, Jornell Quiambao∗
-, Kanishka Rao∗
-, Jarek Rettinghouse∗
-,
-Diego Reyes∗
-, Pierre Sermanet∗
-, Nicolas Sievers∗
-, Clayton Tan∗
-, Alexander Toshev∗
-,
-Vincent Vanhoucke∗
-, Fei Xia∗
-, Ted Xiao∗
-, Peng Xu∗
-, Sichun Xu∗
-, Mengyuan Yan†
-, Andy Zeng∗
-</h2>
-        <h2 style="font-size: 16px;">单位：∗Robotics at Google, †Everyday Robots</h2>
-        <h2 style="font-size: 16px;">6th Conference on Robot Learning (CoRL 2022)</h2>
-        <div class="content has-text-justified">
-摘要：大型语言模型可以编码关于世界的丰富语义知识。这些知识对于旨在根据自然语言表达的高级、时间扩展的指令行事的机器人来说可能非常有用。然而，语言模型的一个显著弱点是它们缺乏现实世界的经验，这使得在给定的实施例中很难利用它们进行决策。例如，要求语言模型描述如何清理泄漏可能会导致合理的叙述，但它可能不适用于需要在特定环境中执行此任务的特定代理，如机器人。我们建议通过预训练的技能提供现实世界的基础，这些技能用于约束模型提出可行且符合上下文的自然语言动作。机器人可以充当语言模型的“手和眼睛”，而语言模型提供有关任务的高级语义知识。我们展示了低级技能如何与大型语言模型相结合，以便语言模型提供有关执行复杂和时间扩展指令的过程的高级知识，而与这些技能相关的值函数则提供了将这些知识与特定物理环境联系起来所需的基础。我们在许多现实世界的机器人任务上评估了我们的方法，在这些任务中，我们展示了对现实世界接地的需求，并且这种方法能够在移动操纵器上完成长时间、抽象、自然语言的指令。该项目的网站、视频和桌面域中的开源代码可以在https://say-can.github.io/上找到。
-        </div>
-    </div>
-</div>
+<p class="p2">在收获甜椒的过程中，远距离相机往往无法完全捕捉到甜椒果梗的图像。因此，甜椒果梗的识别过程分为两个步骤。首先识别甜椒的位置，然后控制机械臂以特定姿势到达甜椒前方一定距离，通过第二次识别获得甜椒果梗的位置。在整个过程中，机械臂的运动规划需要进行两次。在识别甜椒的过程中，机械臂需要以特定的姿势到达水果的前部，在执行过程中可能会出现两个问题。机械臂可能没有解或有解，但机械臂的运动会发生很大变化。第一个问题，即机械臂没有解的原因是，机械臂的工作空间分为灵活工作空间和非灵活工作空间。在灵活的工作空间中，机械臂能够以任意姿态到达。由于机械臂在非灵活工作空间中的姿态限制，机械臂可能没有解。关于第二个问题，如图2-3所示、1-5和6-10分别表示机械臂以特定姿态移动到甜椒前面的相同位置。在两次执行过程中，机械臂移动到同一位置的路径和轨迹不一致。1-5的移动是我们预期的路径。我们希望机械臂能够根据一定的姿态快速高效地到达甜椒的前面。在6-10的运动过程中，机械臂的运动发生了很大变化，末端执行器容易发生缠绕。这将导致采摘机器人的效率低和系统不可靠（成功率低）等问题。目前，以下两种方案主要用于采摘甜椒，一种是使用视觉伺服进行水果采摘。另一种方法是根据识别出的甜椒的位置，在果实前方设置一个点，控制采摘机器人以特定姿势到达该点，准确识别甜椒果梗。这种方法将导致上述两个问题。  </p>
 
----
-![Turing Machine](/static/image/2doAsICan.png)
+<p class="p2">针对采摘机器人效率低、成功率低的问题，提出了一种机械臂运动规划方法。机械臂的工作空间被划分，通过定义的预采摘平面，整个采摘过程被分为两个部分：离线规划和在线计划。离线规划采用数据库规划。我们利用设计的机械臂运动规划算法进行采摘，能够显著提高采摘成功率和可靠性。  
+我们利用采摘机器人对我们的方法进行了验证，首先利用相机基于YOLOv5m识别算法对甜椒进行远距离识别，得到果实的位置，确定采摘顺序。然后控制机械臂依次运动果实前方一定距离，在近距离识别甜椒果梗，得到甜椒梗的采摘点。在近距离下利用YOLOv5m识别算法对甜椒进行识别，考虑到当前视角下出现多个甜椒的可能性，我们选择深度值最小的水果识别框，根据水果识别框获得甜椒梗的感兴趣区域。采用轻量级实例分割网络YOLACT对甜椒梗的ROI进行分割，得到采摘点。最后控制末端执行器进行甜椒的采摘，末端执行首先控制伺服电动双指平行夹持器模块闭合夹持果梗，末端装置控制器控制继电器打开，启动剪切模块，步进电机带动剪切模块进行果梗的切割。实现甜椒梗的分离，最后将甜椒放入收获篮中，完成一个收获周期。整套作业任务周期大约需要21秒左右。如图2-4所示。</p>
 
-*图 2: 我们可视化了SayCan的决策过程。蓝色条表示（标准化的）LLM概率，红色条表示（标准化的）选定技能成功执行的概率。组合得分以绿色条显示，算法选择得分最高的技能。这种可视化强调了SayCan的可解释性。对于任务“我打翻了可乐，你能给我带点东西来清理吗？”，SayCan成功规划并执行了以下步骤：1. 找到一个海绵 2. 拿起海绵 3. 把它带给你 4. 完成。[文献链接](https://arxiv.org/abs/2204.01691)&[项目链接](https://say-can.github.io/)*
+<div style="text-align: center;">
+<img alt="" src="/static/image/3-3.png" style="margin: 0 auto;" /></div>
+<p align="center">图2-3 分别表示了机械臂以特定姿态移动到同一位置的过程图</p>
 
 
 
-
-## 文献三
-<!-- Using HTML to center the abstract -->
-<div class="columns is-centered has-text-centered">
-    <div class="column is-four-fifths">
-        <h2>    </h2>
-        <h2>VoxPoser: Composable 3D Value Maps for Robotic Manipulation with Language Models</h2>
-        <h2 style="font-size: 16px;">作者：Wenlong Huang1
-, Chen Wang1
-, Ruohan Zhang1
-, Yunzhu Li1,2
-, Jiajun Wu1
-, Li Fei-Fei1
-</h2>
-        <h2 style="font-size: 16px;">单位：Stanford University，University of Illinois Urbana-Champaign</h2>
-        <h2 style="font-size: 16px;">7th Conference on Robot Learning (CoRL 2023)</h2>
-        <div class="content has-text-justified">
-摘要：大型语言模型（LLMs）被证明拥有丰富的可操作知识，可以以推理和规划的形式提取用于机器人操纵。尽管取得了进展，但大多数仍然依赖于预定义的运动图元来与环境进行物理交互，这仍然是一个主要的瓶颈。在这项工作中，我们的目标是在给定一组开放指令和一组开放对象的情况下，为各种操纵任务合成机器人轨迹，即一系列密集的6-DoF末端执行器航路点。我们通过首先观察LLM在自由形式语言教学中擅长推断启示和约束来实现这一点。更重要的是，通过利用他们的代码编写能力，他们可以与视觉语言模型（VLM）交互，组成3D价值图，将知识融入代理的观察空间。然后，在基于模型的规划框架中使用合成的值映射来合成具有对动态扰动的鲁棒性的零样本闭环机器人轨迹。我们进一步展示了所提出的框架如何通过有效地学习涉及联系人丰富交互的场景的动态模型，从在线体验中受益。我们在模拟和真实机器人环境中对所提出的方法进行了大规模研究，展示了以自由形式的自然语言执行各种日常操作任务的能力。视频和代码请访问https://voxposer.github.io/。
-        </div>
-    </div>
-</div>
-
----
-![Turing Machine](/static/image/3Voxposer.jpeg)
-
-*图 3: 根据环境的RGB-D观察和语言指令，LLM生成代码，与VLM互动，产生一系列3D可赋值地图和约束地图（统称为价值地图），这些地图以机器人观察空间为基础（a）。然后，组合后的价值地图作为运动规划器的目标函数，用于合成机器人的操作轨迹（b）。整个过程不涉及任何额外的训练。[文献链接](https://arxiv.org/abs/2307.05973)&[项目链接](https://voxposer.github.io/)*
+<div style="text-align: center;">
+<img alt="" src="/static/image/3-7.png" style="margin: 0 auto;" /></div>
+<p align="center">图2-4 表示采用所提算法在真实环境中进行采摘实验</p>
 
 
-## 文献四
-<!-- Using HTML to center the abstract -->
-<div class="columns is-centered has-text-centered">
-    <div class="column is-four-fifths">
-        <h2>    </h2>
-        <h2>VoxAct-B: Voxel-Based Acting and Stabilizing Policy for Bimanual Manipulation</h2>
-        <h2 style="font-size: 16px;">作者：I-Chun Arthur Liu, Sicheng He, Daniel Seita*, Gaurav S. Sukhatme*</h2>
-        <h2 style="font-size: 16px;">单位：University of Southern California</h2>
-        <h2 style="font-size: 16px;">Conference on Robot Learning (CoRL) 2024</h2>
-        <div class="content has-text-justified">
-摘要：双手操作对许多机器人应用至关重要。与单臂操作相比，由于更高维度的动作空间，双手操作任务具有挑战性。先前的工作利用大量数据和原始操作来解决这个问题，但可能会受到样本效率低下和各种任务泛化能力有限的影响。为此，我们提出了VoxAct-B，这是一种基于语言条件的体素方法，利用视觉语言模型（VLM）对场景中的关键区域进行优先级排序，并重建体素网格。我们将此体素网格提供给我们的双手操作策略，以学习动作和稳定动作。这种方法能够从体素中更有效地学习策略，并可推广到不同的任务。在仿真中，我们表明VoxAct-B在细粒度双手操作任务上优于强基线。此外，我们使用两个UR5在现实世界的Open Drawer和Open Jar任务中演示了VoxAct-B。代码、数据和视频可在https://voxact-b.github.io.
-        </div>
-    </div>
-</div>
+# 三、地图构建与导航
+## 1.三维地图构建
 
----
-![Turing Machine](/static/image/4.jpeg)
+<p class="p2">点云配准算法是进行三维场景重构的基础，配准算法的效率和准确性深刻影响三维重构的效果。例如ICP和3D-NDT都是最基本的配准算法，若想将这些配准算法运用到工程中，需要进行改进。本项目中用到实验设备为Velodyne VLP-16，选择工作频率为10Hz，若想此激光对周围环境进行实时三维重重构，就要求每两帧点云之间的配准时间不能超过0.1s，但在传统ICP和3D-NDT算法的配准时间一般都超过0.1s，特别是传统ICP算法，由于其需要遍历每一个激光点数据，所以它的耗时一般很大。因此若想对周围环境进行实时三维重建，需要对现有算法进行改进。
+本项目采用LOAM算法，这个算法是基于传统ICP配准算法改写的，它的主要区别是该算法先提取两帧点云数据的特征点，角点和面型点，然后再做临近搜索，找到特征点对应的角线或者面形块，从而大大减少了运算量，并且在构建三维地图时，进行了两次配准，第一次是帧与帧点云之间的配准，第二次是经过初校准的点云向历史累计点云的配准。由于其低计算量的特点，因此该算法能在低处理性能电脑实现实时三维重建，且生成精准的三维重建地图。
+算法主要分为四个部分，分别为点云获取、特征点提取、运动估计和地图构建，算法框架如图3-1所示。
+</p>
 
-*图 4: ·VoxAct-B使用体素表示和语言从双臂进行6-DoF操作的双手操作。我们在模拟中测试了四个语言条件的双手任务，并在两个UR5的真实设置中测试了两个（打开抽屉和打开罐子）。[文献链接](https://arxiv.org/abs/2407.04152)&[项目链接](https://voxact-b.github.io/)*
+<div style="text-align: center;">
+<img alt="" src="/static/image/4-1.png" style="margin: 0 auto;" /></div>
+<p align="center">图3-1 算法框架图</p>
 
+## 2.移动机器人导航
+### 2.1 三维点云地图转二维栅格地图
+<p class="p2">移动机器人进行导航时，通常是在二维栅格地图下进行路径规划，栅格地图是将应用环境等分为相互独立的栅格单元，栅格单元的大小对应机器人系统外部环境的最小可表示面积，每一个栅格单元的数值表示是否有障碍物存在的可能性大小，介于0到1之间。机器人系统初始化时，栅格地图中每个栅格单元的数值为0.5，表示当前尚不清楚该栅格的实际状态。当确定栅格单元被障碍物占据时，概率值为1；当栅格单元中无障碍物时，概率值为0。栅格地图能比较完整的描述环境信息，易于创建和维护，且在创建过程中不受环境特征的影响，能够直观地将环境已知区域和未知区域进行区分并表达，便于机器人的自主定位、路径规划和避障。本项目将上一节中得到的三维点云地图转化成如图3-1所示的二维栅格地图用于移动机器人导航实验。
+</p>
 
-## 文献五
-<!-- Using HTML to center the abstract -->
-<div class="columns is-centered has-text-centered">
-    <div class="column is-four-fifths">
-        <h2>    </h2>
-        <h2>LaMI: Large Language Models for Multi-Modal Human-Robot Interaction</h2>
-        <h2 style="font-size: 16px;">作者：Chao Wang, Stephan Hasler, Daniel Tanneberg, Felix Ocker, Frank Joublin, Antonello Ceravola, Joerg Deigmoeller, Michael Gienger</h2>
-        <h2 style="font-size: 16px;">单位：Honda Research Institute EU Ofenbach am Main, Germany</h2>
-        <h2 style="font-size: 16px;">Extended Abstracts of the CHI Conference on Human Factors in Computing Systems. 2024: 1-10.</h2>
-        <div class="content has-text-justified">
-摘要：本文提出了一种基于大型语言模型（LLM）的创新机器人系统，用于增强多模态人机交互（HRI）。传统的HRI系统依赖于复杂的设计来进行意图估计、推理和行为生成，这些都是资源密集型的。相比之下，我们的系统使研究人员和从业者能够通过三个关键方面来规范机器人行为：提供高级语言指导，创建机器人可以使用的“原子动作”和表达，以及提供一组示例。在物理机器人上实现，它演示了熟练适应多模式输入，并根据研究人员制定的指导方针确定适当的行动方式来帮助人类使用手臂。同时，它通过语音输出协调机器人的盖子、脖子和耳朵的运动，以产生动态的多模态表情。这展示了该系统通过从传统的手动状态和流程设计方法转变为直观、基于指导和示例驱动的方法来彻底改变HRI的潜力。补充材料可在以下网址找到https://hri-eu.github.io/Lami/
-        </div>
-    </div>
-</div>
+<p class="p2">三维点云地图转二维栅格地图主要采用滤波及投影的方法，主要包括直通滤波、半径滤波和栅格地图转换三个步骤。首先对输入点云进行直通滤波，通过指定坐标范围获取限定高度范围的点云数据；对直通滤波后的点云数据进行半径滤波，该方法假定原始点云中每个激光点在指定的半径邻域中至少包含一定数量的近邻点，将点云中符合假设条件的激光点被视为正常点进行保留，反之，则视为噪声点并进行去除；最后将滤波后的数据转换为二维栅格地图数据，以话题的形式发布并保存。
+</p>
 
----
-![Turing Machine](/static/image/5LaMI.jpeg)
+<div style="text-align: center;">
+<img alt="" src="/static/image/4-2.png" style="margin: 0 auto;" /></div>
+<p align="center">图3-2 二维栅格地图</p>
 
-*图 5: 以制导、能力和示例为中心的LLM驱动的人机交互 [文献链接](https://arxiv.org/abs/2401.15174)&[项目链接](https://hri-eu.github.io/Lami/)*
+### 2.2 移动机器人导航框架
 
+<p class="p2">成功获取栅格地图后，进行栅格地图下移动机器人导航实验。机器人的导航过程主要分为感知周围环境，做出决策和控制的过程。导航功能框架如图3-3所示，主要涉及两个关键点，一个是在环境中的定位部分，另一个是路径规划部分。这是一个完整的体系，路径规划部分为Movebase功能包，是为了找到一条最优的路径；定位部分为Amcl功能包，实现在二维栅格地图中精准定位。
+</p>
 
+<div style="text-align: center;">
+<img alt="" src="/static/image/4-3.png" style="margin: 0 auto;" /></div>
+<p align="center">图3-3 导航功能框架</p>
 
-## 文献六
-<!-- Using HTML to center the abstract -->
-<div class="columns is-centered has-text-centered">
-    <div class="column is-four-fifths">
-        <h2>    </h2>
-        <h2>ManiFoundation Model for General-Purpose Robotic Manipulation of
- Contact Synthesis with Arbitrary Objects and Robots</h2>
-        <h2 style="font-size: 16px;">作者：Zhixuan Xu1∗
-, Chongkai Gao1∗
-, Zixuan Liu2∗
-, Gang Yang1∗
-, Chenrui Tie3
-, Haozhuo Zheng4
-, Haoyu Zhou5
-,
-Weikun Peng1
-, Debang Wang1
-, Tianrun Hu1
-, Tianyi Chen6
-, Zhouliang Yu7
-, Lin Shao1†
-</h2>
-        <h2 style="font-size: 16px;">单位：<br>
-1Department of Computer Science, National University of Singapore,  
-2Tsinghua University,  
-3Peking University,  
-4Department of Mathematics, National University of Singapore,  
-5Department of Mechanical Engineering, National University of Singapore, 
-6Shanghai Jiao Tong University 7Hongkong University of Science and Technology</h2>
-        <h2 style="font-size: 16px;">Accepted to IROS 2024 (Oral Presentation)</h2>
-        <div class="content has-text-justified">
-摘要：为了大幅提高机器人智能，迫切需要开发一个大型模型，使通用机器人能够熟练地执行各种操作任务，类似于LLM所表现出的多功能任务规划能力。物体、机器人和操纵任务的巨大多样性带来了巨大的挑战。我们的工作引入了一个全面的框架来开发通用机器人操纵的基础模型，该模型将操纵任务形式化为接触合成。具体来说，我们的模型将对象和机器人操纵器点云、对象物理属性、目标运动和操纵区域掩码作为输入。它输出物体上的接触点以及相关的接触力或接触后运动，以便机器人实现所需的操纵任务。我们在模拟和现实环境中进行了广泛的实验，操纵铰接的刚性物体、刚性物体和维度不同的可变形物体，从绳索等一维物体到布料等二维物体，再到橡皮泥等三维物体。我们的模型实现了约90%的平均成功率。补充材料和视频可在我们的项目网站上找到，网址为 https://manifoundationmodel.github.io/.
-        </div>
-    </div>
-</div>
+<p class="p2">由图3-3可知，导航过程中，激光雷达用于实时采集外部环境信息为避障奠定基础。里程计数据为机器人提供实时定位信息。通过给定目标点位置坐标，使用Dijkstra算法或A*算法完成全局路径规划，找到一条最优路线。考虑到机器人当前的局部环境信息发生改变，这就需要局部路径规划器。在Movebase功能包中，默认使用动态窗口法实现局部路径规划，使机器人在全局上尽可能按照全局路径移动，同时局部上考虑周围实时环境，选择最优路线。
+</p>
 
----
-![Turing Machine](/static/image/6ManiFoundation.jpeg)
+<p class="p2">通过rviz指定一个目标点后，会调用goalCB()函数，将目标点转换成合适的类型发布到合适的话题中。当第一次收到目标点话题的信息时，会执行回调函数excuteCb()，该函数会对目标点进行判断，确定目标点的有效性。若有效，开启规划线程进行规划路径，否则退出循环。通过全局规划算法进行规划获取全局路径，在此期间executeCb()函数会一直检测是否有新的目标点输入，若待定槽被新的目标点抢占，则重新开启线程planThread，否则继续执行当前规划过程。算法执行过程中会调用executeCycle()函数，该函数有两个参数，分别是目标点位姿和新规划出来的全局路径，将新规划出的路径传入局部路径规划器中并输出机器人控制指令。
+</p>
 
-*图 6: 我们ManiFoundation模型的管道。左：我们将操纵任务分解为基于VLM的规划或流模型中的一系列对象点云运动。中间：我们训练一个ManiFoundation网络来预测序列中每个运动的接触点和力热图。右：我们根据接触点和力热图的初始结果进行优化，获取机器人的执行姿态。[文献链接](https://arxiv.org/abs/2405.06964)&[项目链接](https://manifoundationmodel.github.io/)*
+### 2.3 路径规划算法与仿真
+
+<p class="p2">在众多的路径搜索算法中，A*算法因为用法灵活，对环境信息反应快速，鲁棒性好等特点一直很受欢迎。A*算法是基于节点搜索的路径算法，在栅格地图已知的情况下，非常适用于栅格地图的路径规划。所以此次选取A*算法作为全局路径规划的算法。
+</p>
+
+<p class="p2">假设起始点为S，OPENLIST中存放等待处理的节点，CLOSEDLIST存放已经被处理的节点。A*算法流程图如图3-4所示，具体步骤如下：
+</p>
+
+<div style="text-align: center;">
+<img alt="" src="/static/image/4-4.png" style="margin: 0 auto;" /></div>
+<p align="center">图3-4 A*算法流程图</p>
 
 
-## 文献七
-<!-- Using HTML to center the abstract -->
-<div class="columns is-centered has-text-centered">
-    <div class="column is-four-fifths">
-        <h2>    </h2>
-        <h2> ManipLLM: Embodied Multimodal Large Language Model for
- Object-Centric Robotic Manipulation</h2>
-        <h2 style="font-size: 16px;">作者：Xiaoqi Li, Mingxu Zhang, Yiran Geng, Haoran Geng, Yuxing Long, Yan Shen, Renrui Zhang, Jiaming Liu, Hao Dong</h2>
-        <h2 style="font-size: 16px;">单位：1School of Computer Science, Peking University
-2 Beijing University of Posts and Telecommunications 3 MMLab, CUHK</h2>
-        <h2 style="font-size: 16px;">Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR), 2024, pp. 18061-18070</h2>
-        <div class="content has-text-justified">
-摘要: 机器人操纵依赖于准确预测接触点和末端执行器方向，以确保成功操作。然而，基于学习的机器人操作，在模拟器内的有限类别上训练，往往难以实现通用性，尤其是在面对广泛类别时。因此，我们引入了一种创新的机器人操纵方法，该方法利用多模态大语言模型（MLLM）的鲁棒推理能力来提高操纵的稳定性和泛化能力。通过微调注入的适配器，我们保留了MLLM固有的常识和推理能力，同时为它们配备了操作能力。基本见解在于引入了微调范式，包括对象类别理解、启示先验推理和以对象为中心的姿势预测，以激发MLLM在操纵中的推理能力。在推理过程中，我们的方法利用RGB图像和文本提示来预测思维链中末端执行器的姿势。在建立初始联系后，引入主动阻抗自适应策略，以闭环方式规划即将到来的航路点。此外，在现实世界中，我们设计了一种测试时间自适应（TTA）策略进行操作，使模型能够更好地适应当前的现实世界场景配置。模拟器和现实世界的实验表明了ManipLLM的良好性能。更多详细信息和演示可以在https://sites.google.com/view/manipllm.
-        </div>
-    </div>
-</div>
+<p class="p2">（1）将开始点S记为当前点N，把当前节点N放入CLOSEDLIST；</p>
+<p class="p2">（2）搜索节点N所有的相邻节点，如果某相邻节点不在OPENLIST和CLOSEDLIST，计算该相邻点的代价值，将其加入OPENLIST中；</p>
+<p class="p2">（3）判断OPENLIST是否为空，如果没有找到目标点之前，OPENLIST为空，则说明寻路失败。否则算法继续；</p>
+<p class="p2">（4）在OPENLIST找到一个代价值最小的节点，判断该节点是否为目标点，若是目标点，则算法成功，找到一条路径，否则继续；</p>
+<p class="p2">（5）将该代价最小值的节点设置为当前点N，将节点N从OPENLIST中删除，并放入到CLOSEDLIST中；跳回步骤（2）。</p>
+<p class="p2">机器人根据构建好的全局环境地图，规划出的全局路径是静态的，但是机器人所处的环境是动态变化的，当机器人按照全局静态路径移动时，可能会遇到无法通过的障碍物，因此，还需要进行局部路径规划以及动态避障。此次采用动态窗口法作为局部路径规划算法。动态窗口算法是以机器人的运动模型为基础，在机器人的速度空间(v, w)进行多种采样，然后基于机器人的运动模型，模拟出一段时间内机器人以某一采样速度移动的轨迹，并利用评价函数对这些移动轨迹进行打分，最后选出得分最高的轨迹作为机器人的局部移动路径，从而避开机器人附近的障碍物。</p>
+<p class="p2">图3-5为机器人的速度空间采样示意图，红色图形表示机器人使用环境中的障碍物，图中的蓝色矩形表示机器人，圆弧状的虚线表示机器人以某个采样速度运动的可能轨迹，再根据轨迹评价函数对这些轨迹进行打分，根据图4-5可知，中间位置的轨迹碰撞到障碍物的可能性较小，得分较高。</p>
 
----
-![Turing Machine](/static/image/7ManipLLM.jpeg)
+<div style="text-align: center;">
+<img alt="" src="/static/image/4-5.png" style="margin: 0 auto;" /></div>
+<p align="center">图3-5 机器人的速度空间采样示意图</p>
 
-*图 7: ManipLLM的训练细节。该范式包含四个训练任务，使模型能够识别当前对象（类别级别），了解可以操纵哪些区域（区域级别），并最终生成精确的末端执行器姿势（姿势级别）。[文献链接](https://arxiv.org/abs/2312.16217)&[项目链接](https://sites.google.com/view/manipllm)*
+<p class="p2">DWA算法的局部路径规划的具体步骤如图3-6所示。算法具体步骤为：</p>
 
+<div style="text-align: center;">
+<img alt="" src="/static/image/4-6.png" style="margin: 0 auto;" /></div>
+<p align="center">图3-6 DWA算法流程图</p>
 
-## 文献八
-<!-- Using HTML to center the abstract -->
-<div class="columns is-centered has-text-centered">
-    <div class="column is-four-fifths">
-        <h2>    </h2>
-        <h2>Physically Grounded Vision-Language Models for Robotic Manipulation</h2>
-        <h2 style="font-size: 16px;">作者：Jensen Gao1, Bidipta Sarkar1, Fei Xia2, Ted Xiao2, Jiajun Wu1,
-Brian Ichter2, Anirudha Majumdar2,3, Dorsa Sadigh1,2</h2>
-        <h2 style="font-size: 16px;">单位：1Stanford University, 2Google DeepMind, 3Princeton University</h2>
-        <h2 style="font-size: 16px;">2024 IEEE International Conference on Robotics and Automation (ICRA)</h2>
-        <div class="content has-text-justified">
-摘要：视觉语言模型（VLMs）的最新进展提高了视觉问答和图像字幕等任务的性能。因此，这些模型现在能够很好地推理物理世界，特别是在机器人操纵等领域。然而，目前的VLM对常见物体的物理概念（如材料、脆弱性）的理解有限，这限制了它们在涉及此类物体的交互和物理推理的机器人操纵任务中的有用性。为了解决这一局限性，我们提出了PHYSOBJECTS，这是一个以对象为中心的数据集，包含39.6K个众包和417K个常见家用物品的自动物理概念注释。我们证明，通过从视觉外观中捕捉这些概念的人类先验，在PHYSOBJECTS上微调VLM可以提高其对物理对象概念的理解，包括对所提出概念的泛化。我们将这种基于物理的VLM整合到一个具有大型语言模型的机器人规划器的交互式框架中，并与不利用基于物理的VLS的基线相比，在需要对物理对象概念进行推理的任务上显示出改进的规划性能。我们还说明了我们的物理接地VLM在真实机器人上的好处，它提高了任务成功率。我们发布了我们的数据集，并在https://iliad.stanford.edu/pg-vlm/。
-        </div>
-    </div>
-</div>
+<p class="p2">（1）根据机器人系统相关性能参数以及机器人当前所处位置与目标点的相对位置关系，计算出机器人的采样速度空间；</p>
+<p class="p2">（2）结合巡逻机器人的运动模型，模拟出速度采样空间中每一个可能速度的移动轨迹；</p>
+<p class="p2">（3）根据DWA算法定义的评价函数，计算出巡逻机器人的每一个可能移动轨迹的得分；</p>
+<p class="p2">（4）重复执行步骤（2）（3），直到得出所有采样速度移动轨迹的得分；</p>
+<p class="p2">（5）选出得分最高的机器人移动轨迹，这条轨迹就是机器人的当前局部最优路径。</p>
 
----
-![Turing Machine](/static/image/8Physically.jpeg)
+<p class="p2">在得到栅格地图以及选取完全局和局部路径规划算法后，则进行导航避障实验。将机器人放在地图原点，地图的原点可以在地图的描述文件中修改，在利用move_base进行导航前，还需要配置amcl的各个参数，amcl是用来通过里程计和激光进行定位的，可以通过Rviz中的2D Nav Goal按钮进行设置目标终点，或者通过脚本发布clicked_point消息，消息的类型是geometry_msgs/PointStamped，也可以设置导航的目标终点，如图3-7所示，红色的箭头的指向是目标点的方向，箭头的尾部是目标点的位置。可以通过A*算法创建全局路径和通过DWA算法创建局部路径，在图5-20中，绿色细线是规划的全局路径，红色细线是规划的局部路径，且局部路径是动态的。</p>
 
-*图 8: （a） 我们收集常见家居物品的物理概念注释，以微调VLM。（b） 我们在基于LLM的机器人规划框架中使用微调的VLM，其中LLM在生成计划之前向VLM查询场景中对象的物理概念。（c） 我们在真正的Franka Emika Panda机器人上评估LLM生成的计划。[文献链接](https://arxiv.org/abs/2309.02561)&[项目链接](https://iliad.stanford.edu/pg-vlm/)*
+<div style="text-align: center;">
+<img alt="" src="/static/image/4-7.png" style="margin: 0 auto;" /></div>
+<p align="center">图3-7 机器人导航示意图</p>
+
+<p class="p2">在沿着路径规划移动后，机器人到达了目标点，如图3-8所示，目标的参数机器人导航的位置偏差大约在7cm左右，方向偏差大约在0.09rad。</p>
+
+<div style="text-align: center;">
+<img alt="" src="/static/image/4-8.png" style="margin: 0 auto;" /></div>
+<p align="center">图3-8 机器人到达目标点</p>
 
 
 
-## 文献九
-<!-- Using HTML to center the abstract -->
-<div class="columns is-centered has-text-centered">
-    <div class="column is-four-fifths">
-        <h2>    </h2>
-        <h2>Instruct2Act: Mapping Multi-modality Instructions
- to Robotic Actions with Large Language Model</h2>
-        <h2 style="font-size: 16px;">作者：Siyuan Huang1,2 Zhengkai Jiang4 Hao Dong3 Yu Qiao2 Peng Gao2 Hongsheng Li5</h2>
-        <h2 style="font-size: 16px;">单位：1 Shanghai Jiao Tong University, 2 Shanghai AI Laboratory, 3 CFCS, School of CS, PKU
-4 University of Chinese Academy of Sciences, 5 The Chinese University of Hong Kong</h2>
-        <h2 style="font-size: 16px;">Huang S, Jiang Z, Dong H, et al. Instruct2act: Mapping multi-modality instructions to robotic actions with large language model[J]. arXiv preprint arXiv:2305.11176, 2023.</h2>
-        <div class="content has-text-justified">
-摘要：基础模型在各种应用中取得了重大进展，包括文本到图像生成、全景分割和自然语言处理。本文介绍了Instruct2Act，这是一个利用大型语言模型将多模态指令映射到机器人操纵任务的顺序动作的框架。具体来说，Instruct2Act使用LLM模型生成Python程序，这些程序构成了机器人任务的全面感知、规划和动作循环。在感知部分，预定义的API用于访问多个基础模型，其中分段任意模型（SAM）准确地定位候选对象，CLIP对其进行分类。通过这种方式，该框架利用基础模型的专业知识和机器人能力，将复杂的高级指令转换为精确的策略代码。我们的方法是可调整和灵活的，可以适应各种教学方式和输入类型，并满足特定的任务需求。我们通过在桌面操作领域的不同场景中对机器人任务进行评估，验证了我们方法的实用性和效率。此外，我们的零样本方法在几个任务中优于许多最先进的基于学习的策略。我们提出的方法的代码可在https://github.com/OpenGVLab/Instruct2Act，作为具有各种模态输入的高级机器人指令任务的稳健基准。
-        </div>
-    </div>
-</div>
+## 四、路演宣传
+本案例以题为《番茄和甜椒采摘机器人》参加国家科技计划成果路演活动，以促进国家科技计划成果转化，旨在推动产学研深度融合，促进国家科技计划成果与风险投资、企业深度对接，打通从科研到产业的全链条。本次项目路演将聚焦数字技术（软件和信息技术服务、元宇宙、车联网等）、洁净能源（节能环保、新材料等）、智能制造（装备制造、智慧海洋等）、生命科学（生物医药、食品健康）等4个领域，并邀请各级科技计划项目、“揭榜挂帅”项目、创新创业大赛项目参会，我方案例获得了在场评委的一致好评，在场的公司积极与我们寻求合作。
 
----
-![Turing Machine](/static/image/9Instruct2Act.jpeg)
+<img src="/static/image/108.jpg" alt="Turing Machine" width="800" style="display: block; margin: auto;">    
 
-*图 9: 我们提出的Instruct2Act框架的范式。从任务指令开始，该框架利用LLM生成可执行代码，通过API调用可视化基础模型来识别环境。利用识别的对象语义信息，我们生成合理的动作，并将其发送到低级控制器以执行任务。绿色和蓝色的指令分别代表纯语言和多模式指令。[文献链接](https://arxiv.org/abs/2305.11176)&[项目链接](https://github.com/OpenGVLab/Instruct2Act)*
+## 五、学生培养
+
+#### 1. 联合培养博士
+基于人工智能在研究生教育领域的创新应用，大连理工大学王东教授与英国埃塞克斯大学谷东兵教授联合培养博士两名，并发表学术期刊多篇。  
+中方大连理工大学：王洋洋博士  
+英方埃塞克斯大学：Dr. Fuli Wang  
+[1] Yangyang Wang, Xiaorui Ma, Jie Wang, Shilong Hou, Ju Dai, Dongbing Gu, Hongyu Wang. Robust AUV visual loop-closure detection based on variational autoencoder network[J]. IEEE Transactions on Industrial Informatics, 2022, 18(12): 8829-8838.  
+[2] Yangyang Wang, Dongbing Gu, Xiaorui Ma, Jie Wang, Hongyu Wang. Robust Real-Time AUV Self-Localization Based on Stereo Vision-Inertia[J]. IEEE Transactions on Vehicular Technology, 2023.  
+
+#### 2. 研究生培养
+
+依托本案例指导博士生15人，已毕业博士生3人；硕士生35人，已毕业硕士生19人；其中8人获大连理工大学优秀硕士学位论文， 4人获辽宁省优秀毕业生， 1人获大连理工大学就业榜样和大连理工大学服从国家需要优秀毕业生称号。
 
 
-## 文献十
-<!-- Using HTML to center the abstract -->
-<div class="columns is-centered has-text-centered">
-    <div class="column is-four-fifths">
-        <h2>    </h2>
-        <h2>TidyBot: Personalized Robot Assistance with Large Language Models</h2>
-        <h2 style="font-size: 16px;">作者：Jimmy Wu1 · Rika Antonova2 · Adam Kan3 · Marion Lepert2 · Andy Zeng4 · Shuran Song5 · Jeannette Bohg2 ·
-Szymon Rusinkiewicz1 · Thomas Funkhouser1,4</h2>
-        <h2 style="font-size: 16px;">单位：1 Princeton University, Princeton, NJ, USA
-2 Stanford University, Stanford, CA, USA
-3 The Nueva School, San Mateo, CA, USA
-4 Google, Mountain View, CA, USA
-5 Columbia University, New York, NY, USA</h2>
-        <h2 style="font-size: 16px;">Autonomous Robots (2023) 47:1087–1102</h2>
-        <div class="content has-text-justified">
-摘要：为了使机器人有效地个性化物理辅助，它必须学习用户偏好，这些偏好通常可以重新应用于未来的场景。在这项工作中，我们研究了使用机器人进行家庭清洁的个性化，这些机器人可以通过捡起物体并将其放好来整理房间。一个关键的挑战是确定放置每个物品的合适位置，因为人们的偏好可能因个人品味或文化背景而异。例如，一个人可能更喜欢把衬衫放在抽屉里，而另一个人可能喜欢把它们放在架子上。我们的目标是构建一个系统，通过与特定人的预先互动，从少数例子中学习这些偏好。我们表明，机器人可以将基于语言的规划和感知与大型语言模型（LLM）的少镜头摘要功能相结合，以推断出广泛适用于未来交互的广义用户偏好。这种方法能够快速适应，并在我们的基准数据集中对看不见的对象达到91.2%的准确率。我们还在一个名为TidyBot的真实世界移动操纵器上演示了我们的方法，该操纵器在真实世界的测试场景中成功地放置了85.0%的物体。
-        </div>
-    </div>
-</div>
+#### 3. 本科生培养
 
----
-![Turing Machine](/static/image/10TidyBot.jpeg)
+依托本案例指导全国大学生创新创业训练计划12项，国家级3项，省级5项，获辽宁省第八届大学生创新创业年会二等奖1项。
+![Turing Machine](/static/image/100.png)
 
-*图 10: 系统概述：一旦用LLM总结了用户的偏好，TidyBot将定位地板上最近的物体，用其以自我为中心的相机移动以获得特写视图，使用CLIP预测物体的类别，使用LLM总结的规则选择容器和操纵图元，然后执行图元将物体放入所选的容器中，重复整个过程，直到地板上找不到更多的物体。[文献链接](https://arxiv.org/abs/2305.05658)*
+#### 4. 科技竞赛
+
+（1）获2024世界机器人大赛锦标赛创新创意组三等奖  
+<img src="/static/image/101.png" alt="Turing Machine" width="600" style="display: block; margin: auto;">    
 
 
-## 文献十一
-<!-- Using HTML to center the abstract -->
-<div class="columns is-centered has-text-centered">
-    <div class="column is-four-fifths">
-        <h2>    </h2>
-        <h2>GraspGPT: Leveraging Semantic Knowledge from
- a Large Language Model for Task-Oriented Grasping</h2>
-        <h2 style="font-size: 16px;">作者：Chao Tang , Dehao Huang , Wenqi Ge , Weiyu Liu , and Hong Zhang</h2>
-        <h2 style="font-size: 16px;">单位：Southern University of Science and Technology</h2>
-        <h2 style="font-size: 16px;">IEEE Robotics and Automation Letters, vol. 8, no. 11, pp. 7551-7558, 2023.</h2>
-        <div class="content has-text-justified">
-摘要：面向任务的抓取（TOG）是指预测对对象的抓取，以实现后续操作任务的问题。为了对对象、任务和抓取之间的复杂关系进行建模，现有的方法将语义知识作为先验整合到TOG管道中。然而，现有的语义知识通常是基于封闭世界概念集构建的，这限制了对预定义集合之外的新概念的泛化。为了解决这个问题，我们提出了GraspGPT，这是一个基于大型语言模型（LLM）的TOG框架，它利用LLM的开放式语义知识来实现对新概念的零样本泛化。我们在语言增强任务抓取（LA TaskGrasp）数据集上进行了实验，并证明了当从训练集中推广到新概念时，在不同的保留设置下，抓取GPT的性能优于现有的TOG方法。在真实的机器人实验中进一步验证了GraspGPT的有效性。我们的代码、数据、附录和视频可在以下网址公开获取https://sites.google.com/view/graspgpt.
-        </div>
-    </div>
-</div>
-
----
-![Turing Machine](/static/image/11GraspGPT.jpeg)
-
-*图 11: （a） GrapGPT框架概述：当在自然语言教学中出现一个新概念，如一个新的对象类或任务时，GrapGPT首先提示LLM获取该概念的一组语言描述段落。随后，GrasGPT根据传感器和LLM的多模态输入评估抓取候选者的任务兼容性。（b） 面向任务的掌握评估器的详细结构：该模块是一个定制的转换器解码器，将LLM的语义知识注入自然语言教学中。[文献链接](https://arxiv.org/abs/2307.13204)&[项目链接](https://sites.google.com/view/graspgpt)*
+<img src="/static/image/102.jpg" alt="Turing Machine" width="600" style="display: block; margin: auto;">  
 
 
+（2）获2023年全国人工智能应用场景创新挑战赛种子组一等奖及“优秀指导老师”奖  
+<img src="/static/image/103.jpg" alt="Turing Machine" width="400" style="display: block; margin: auto;">    
+
+
+<img src="/static/image/104.jpg" alt="Turing Machine" width="600" style="display: block; margin: auto;">  
+
+（3）获第三届、第四届辽宁省人工智能应用大赛二等奖
+
+
+
+
+<img src="/static/image/105.jpg" alt="Turing Machine" width="500" style="display: block; margin: auto;">    
+
+<img src="/static/image/106.jpg" alt="Turing Machine" width="500" style="display: block; margin: auto;">  
+
+<img src="/static/image/107.jpg" alt="Turing Machine" width="500" style="display: block; margin: auto;">  
 
 
 <!-- > Note: This is an example of a Jekyll-based project website template: [Github link](https://github.com/shunzh/project_website).\
@@ -372,3 +358,4 @@ Szymon Rusinkiewicz1 · Thomas Funkhouser1,4</h2>
 	</div>
 </body>
 </html> -->
+

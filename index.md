@@ -5,7 +5,7 @@ permalink: /
 title: 
    基于具身智能赋能的机械臂抓取在创新研究生教育模式改革中的应用
 authors:
-    王东
+    lzl
 affiliations:
     大连理工大学 控制科学与工程学院
 # paper: https://www.cs.virginia.edu/~robins/Turing_Paper_1936.pdf
